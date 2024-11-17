@@ -1,11 +1,13 @@
 
-git clone
-
+git clone https://github.com/SerjiKSM/profile.git
+cd profile
 Stop and remove all containers and volumes to ensure a clean setup:
 docker-compose down -v
 docker-compose up -d --build
-docker-compose down -v && docker-compose up -d --build
 docker ps
+docker-compose exec app composer install
+http://localhost
+http://localhost/users-profile
 
 #Run the following command after making changes to the composer.json to regenerate the autoload files:
 docker-compose exec app composer dump-autoload
