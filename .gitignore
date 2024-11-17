@@ -1,0 +1,61 @@
+# PHPStorm project files
+.idea/
+
+# Logs and debugging files
+*.log
+*.cache
+*.tmp
+*.seed
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Composer dependencies
+/vendor/
+
+# Node.js dependencies
+/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# PHPUnit results
+phpunit.result.cache
+
+# Symfony binary
+/.symfony/
+
+# Laravel specific files
+/storage/
+*.key
+
+# Cache and temp files
+*.bak
+*.swp
+*.swo
+/tmp/
+.cache/
+*.pid
+*.gz
+*.zip
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Build artifacts
+/build/
+dist/
+*.min.*
+
+# Generated documentation
+/docs/
+
+# Other IDE-specific files
+*.iml
+*.ipr
+*.iws

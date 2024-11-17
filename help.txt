@@ -1,0 +1,27 @@
+
+git clone
+
+Stop and remove all containers and volumes to ensure a clean setup:
+docker-compose down -v
+docker-compose up -d --build
+docker-compose down -v && docker-compose up -d --build
+docker ps
+
+#Run the following command after making changes to the composer.json to regenerate the autoload files:
+docker-compose exec app composer dump-autoload
+
+
+curl --location --request POST 'localhost/user-profile' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "firstName":"First Name",
+    "lastName":"Last Name",
+    "birthDate":"2015-05-15",
+    "region":"Region",
+    "city":"City",
+    "address":"Address",
+    "phoneNumber":"+3806712345633000"
+}'
+
+curl --location --request GET 'localhost/users-profile'
+
