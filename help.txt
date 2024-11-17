@@ -1,7 +1,7 @@
 
 git clone https://github.com/SerjiKSM/profile.git
 cd profile
-Stop and remove all containers and volumes to ensure a clean setup:
+#Stop and remove all containers and volumes to ensure a clean setup:
 docker-compose down -v
 docker-compose up -d --build
 docker ps
